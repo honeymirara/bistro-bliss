@@ -7,13 +7,98 @@
 
     .info {
         display: flex;
+        gap: 25px;
 
 
-        .phone {
-            background: url('./assets/phone.svg') no-repeat;
-            background-size: contain;
-            width: 18px;
-            height: 18px;
+        .firstBlock {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .phone {
+                background: url('./assets/phone.svg') no-repeat;
+                background-size: contain;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .secondBlock {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .postcard {
+                background: url('./assets/mail.svg') no-repeat;
+                background-size: contain;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+
+        p {
+            color: var(--neutral-02, #F9F9F7);
+            font: 400 16px DM Sans;
+            line-height: 24px;
+        }
+
+
+    }
+
+    .media {
+        display: flex;
+        gap: 4px;
+
+        svg {
+            cursor: pointer;
+
+            path {
+                transition: 0.5s;
+
+                &:hover {
+                    fill: #FFF;
+                }
+            }
         }
     }
+
+
+}
+
+.navigation {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 343.722px;
+    background-color: #FFF;
+    padding: 25.5px 155.5px 10px 155.5px;
+
+
+    .logo {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        .logoImg {
+            background: url('./assets/japanese-food.svg') no-repeat;
+            width: 56px;
+            height: 55px;
+        }
+
+        h1 {
+            color: #474747;
+            font: 600 42.667px Playfair Display;
+            line-height: 29.333px;
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
