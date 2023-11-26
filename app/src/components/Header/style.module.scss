@@ -72,7 +72,7 @@
     align-items: center;
     gap: 343.722px;
     background-color: #FFF;
-    padding: 25.5px 155.5px 10px 155.5px;
+    padding: 25.5px 90.5px 13px 51.5px;
 
 
     .logo {
@@ -99,6 +99,33 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+    }
+
+    p {
+        color: var(--neutral-07, #2C2F24);
+        font: 500 16px DM Sans;
+        line-height: 24px;
+        border-radius: 34px;
+        padding: 4px 16px;
+    }
+
+    .buttonBook {
+        display: flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 118px;
+        border: 1.5px solid var(--neutral-07, #2C2F24);
+
+        color: var(--neutral-07, #182226);
+        font: 700 16px DM Sans;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+         background-color: rgb(222, 137, 137);
+        }
     }
 
 }

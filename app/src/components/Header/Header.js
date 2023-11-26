@@ -31,11 +31,14 @@ export default function Header() {
                         <h1>Bistro Bliss</h1>
                     </div>
                     <nav className={style.nav}>
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Menu</p>
                         {/* <Link href={'/'}> <p className={pathname === '/' ? style.active : null}>Home</p> </Link>
                         <Link href={'/about'}> <p className={pathname === '/about' ? style.active : null}>About</p> </Link>
                         <Link href={'/menu'}> <p className={pathname === '/menu' ? style.active : null}>Menu</p> </Link> */}
                     </nav>
-                    <div className={style.buttonBook}></div>
+                    <div className={style.buttonBook}>Book a Table</div>
                 </div>
             </div>
 
