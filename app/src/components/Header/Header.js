@@ -41,7 +41,6 @@ export default function Header() {
                     <div className={style.buttonBook}>Book a Table</div>
                 </div>
             </div>
-
         </>
     )
 }

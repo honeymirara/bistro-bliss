@@ -1,0 +1,80 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../assets/pinterest.svg') no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    h1 {
+        color: var(--neutral-07, #2C2F24);
+        text-align: center;
+        font: 400 100px Playfair Display;
+        line-height: 96px;
+        width: 667px;
+    }
+
+    p {
+        display: flex;
+        color: var(--neutral-07, #2C2F24);
+        text-align: center;
+        font: 400 32px DM Sans;
+        line-height: 40px;
+        width: 640px;
+        font-style: normal;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .firstButton {
+            display: flex;
+            padding: 20px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 118px;
+            background: #AD343E;
+            color: var(--neutral-01, #FFF);
+            text-align: right;
+            font: 700 16px DM Sans;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #a17579;
+                color: #182226;
+            }
+        }
+
+        .secondButton {
+            display: flex;
+            padding: 20px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 118px;
+            border: 1.5px solid var(--neutral-07, #2C2F24);
+            color: var(--neutral-07, #182226);
+            text-align: right;
+            font: 700 16px DM Sans;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #a17579;
+                color: white;
+            }
+        }
+    }
+}

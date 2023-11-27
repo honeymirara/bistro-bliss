@@ -1,11 +1,11 @@
-import Header from '@/components/Header/Header'
+import HomePage from './HomePage/page'
 import styles from './page.module.css'
 
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-    <Header/>
+  <HomePage/>
     </>
     
   )
