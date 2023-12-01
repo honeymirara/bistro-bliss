@@ -50,6 +50,7 @@ export default function HomePage() {
             </section>
 
             <section className={style.events}>
+                <h6>We also offer unique services for your events</h6>
                 <div className={style.pins}>
                     <div className={style.caterings}>
                         <div className={style.caterinImg}></div>
@@ -66,7 +67,7 @@ export default function HomePage() {
                         <h5>Caterings</h5>
                         <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
                     </div>
-                    <div className={style.events}>
+                    <div className={style.eventsPin}>
                         <div className={style.eventImg}></div>
                         <h5>Events</h5>
                         <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
