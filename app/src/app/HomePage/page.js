@@ -1,12 +1,50 @@
-import Header from '@/components/Header/Header'
-import style from './style.module.scss'
-import Footer from '@/components/Footer/Footer'
+import ImgBreakfast from '@/components/ImgBreakfast/ImgBreakfast';
+import style from './style.module.scss';
+import ImgEvents from '@/components/ImgEvents/ImgEvents';
 
+
+const breakfastArr = [{
+    "id": "1",
+    "h3": "Breakfast",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life.",
+}, {
+    "id": "2",
+    "h3": "Main Dishes",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life.",
+}, {
+    "id": "3",
+    "h3": "Drinks",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life.",
+}, {
+    "id": "4",
+    "h3": "Desserts",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life.",
+}];
+
+const eventsArr = [{
+    "id": "1",
+    "h5": "Caterings",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life."
+},
+{
+    "id": "2",
+    "h5": "Birthdays",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life."
+},
+{
+    "id": "3",
+    "h5": "Weddings",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life."
+},
+{
+    "id": "4",
+    "h5": "Events",
+    "p": "In the new era of technology we look in the future with certainty and pride for our life."
+}];
 
 export default function HomePage() {
     return (
         <>
-
             <section className={style.preview}>
                 <div className={style.wrapper}>
                     <h1>Best food for your taste</h1>
@@ -21,30 +59,14 @@ export default function HomePage() {
             <section className={style.menu}>
                 <h2>Browse Our Menu</h2>
                 <div className={style.meals}>
-                    <div className={style.breakfast}>
-                        <div className={style.cupImg}></div>
-                        <h3>Breakfast</h3>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                        <h4>Explore menu</h4>
-                    </div>
-                    <div className={style.mainDishes}>
-                        <div className={style.dishImg}></div>
-                        <h3>Main Dishes</h3>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                        <h4>Explore menu</h4>
-                    </div>
-                    <div className={style.drinks}>
-                        <div className={style.drinkImg}></div>
-                        <h3>Drinks</h3>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                        <h4>Explore menu</h4>
-                    </div>
-                    <div className={style.desserts}>
-                        <div className={style.cakeImg}></div>
-                        <h3>Desserts</h3>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                        <h4>Explore menu</h4>
-                    </div>
+                    {breakfastArr.map((el, index) =>
+                        <div className={style.breakfast} key={index}>
+                            <ImgBreakfast id={el.id} />
+                            <h3>{el.h3}</h3>
+                            <p>{el.p}</p>
+                            <h4>Explore menu</h4>
+                        </div>
+                    )}
                 </div>
 
             </section>
@@ -52,26 +74,12 @@ export default function HomePage() {
             <section className={style.events}>
                 <h6>We also offer unique services for your events</h6>
                 <div className={style.pins}>
-                    <div className={style.caterings}>
-                        <div className={style.caterinImg}></div>
-                        <h5>Caterings</h5>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                    </div>
-                    <div className={style.birthdays}>
-                        <div className={style.birthdayImg}></div>
-                        <h5>Birthdays</h5>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                    </div>
-                    <div className={style.weddings}>
-                        <div className={style.weddingImg}></div>
-                        <h5>Caterings</h5>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                    </div>
-                    <div className={style.eventsPin}>
-                        <div className={style.eventImg}></div>
-                        <h5>Events</h5>
-                        <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                    </div>
+                    {eventsArr.map((el, index) =>
+                        <div className={style.cards}>
+                            <ImgEvents id ={el.id}/>
+                            <h5>{el.h5}</h5>
+                            <p>{el.p}</p>
+                        </div>)}
                 </div>
             </section>
 
