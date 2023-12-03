@@ -75,7 +75,7 @@ export default function HomePage() {
                 <h6>We also offer unique services for your events</h6>
                 <div className={style.pins}>
                     {eventsArr.map((el, index) =>
-                        <div className={style.cards}>
+                        <div className={style.cards} key={index}>
                             <ImgEvents id ={el.id}/>
                             <h5>{el.h5}</h5>
                             <p>{el.p}</p>

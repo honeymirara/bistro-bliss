@@ -1,7 +1,15 @@
+'use client'
+
+import { usePathname } from 'next/navigation';
 import Icons from './Icons';
 import style from './style.module.scss';
+import Link from 'next/link';
+
+
 
 export default function Header() {
+    const Pathname = usePathname()
+
     return (
         <>
             <div className={style.contacts}>
@@ -31,12 +39,9 @@ export default function Header() {
                         <h1>Bistro Bliss</h1>
                     </div>
                     <nav className={style.nav}>
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Menu</p>
-                        {/* <Link href={'/'}> <p className={pathname === '/' ? style.active : null}>Home</p> </Link>
-                        <Link href={'/about'}> <p className={pathname === '/about' ? style.active : null}>About</p> </Link>
-                        <Link href={'/menu'}> <p className={pathname === '/menu' ? style.active : null}>Menu</p> </Link> */}
+                        <Link href={'/'}><p className={Pathname === '/' ? style.active : null}>Home</p></Link>
+                        <Link href={'/about'}><p className={Pathname === '/about' ? style.active : null}>About</p></Link>
+                        <Link href={'/menu'}><p className={Pathname === '/menu' ? style.active : null}>Menu</p></Link>
                     </nav>
                     <div className={style.buttonBook}>Book a Table</div>
                 </div>
