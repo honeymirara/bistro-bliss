@@ -1,0 +1,114 @@
+.wrapper {
+    display: flex;
+    background: #474747;
+    gap: 135px;
+    padding: 120px 152px 239px 152px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .logo {
+            align-items: center;
+            gap: 10px;
+            display: inline-flex;
+
+            .imgFood {
+                background: url('./assets/japanese-food\ \(1\).svg') no-repeat;
+                width: 56px;
+                height: 55px;
+            }
+
+            h1 {
+                color: #fff;
+                font: 600 42.667px Playfair Display;
+                line-height: 29.333px;
+                letter-spacing: -0.4px;
+            }
+        }
+
+        p {
+            width: 293px;
+            color: var(--neutral-04, #ADB29E);
+            font: 400 16px DM Sans;
+            line-height: 24px;
+        }
+
+    }
+
+    .pages,
+    .upages {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        h2 {
+            color: var(--neutral-01, #FFF);
+            font: 600 16px DM Sans;
+            line-height: 24px;
+        }
+
+        .paragraphs {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            p {
+                color: var(--neutral-03, #DBDFD0);
+                font: 400 16px DM Sans;
+                line-height: 24px;
+
+                &:hover {
+                    cursor: pointer;
+                    transition: 0.5s;
+                    color: #898787;
+                }
+            }
+        }
+
+    }
+
+    .follow {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        h2 {
+            color: var(--neutral-01, #FFF);
+            font: 600 16px DM Sans;
+            line-height: 24px;
+        }
+
+        .images {
+            .first {
+                background: url('./assets/first.svg') no-repeat;
+                width: 222px;
+                height: 176px;
+            }
+
+            .second {
+                background: url('./assets/second.svg') no-repeat;
+                width: 222px;
+                height: 176px;
+
+            }
+
+            .third {
+                background: url('./assets/third.svg') no-repeat;
+                width: 222px;
+                height: 176px;
+            }
+
+            .fourth {
+                background: url('./assets/fourth.svg') no-repeat;
+                width: 222px;
+                height: 176px;
+
+            }
+        }
+
+    }
+}
