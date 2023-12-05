@@ -1,13 +1,23 @@
 .healthyFood {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 90px;
     background: var(--neutral-02, #F9F9F7);
+    padding: 98px 92px;
 
-    .pastaImg {
+
+    .wrapper {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    
+    
+
+    .imagePasta {
         background: url('./assets/pasta.svg') no-repeat;
-        width: 330px;
-        height: 330px;
+        width: 650px;
+        height: 616px;
     }
 
     .information {
@@ -15,14 +25,17 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
+        width: 557px;
 
         h1 {
             color: var(--neutral-07, #2C2F24);
             font: 500 55px Playfair Display;
             line-height: 60.5px;
+            text-align: center;
+            
         }
 
-        p1 {
+        .firstParagraph {
             color: var(--neutral-07, #2C2F24);
             font: 500 18px DM Sans;
             line-height: 28px;
@@ -30,9 +43,10 @@
 
         p2 {
             color: var(--neutral-06, #414536);
-            font:400 16px DM Sans;
+            font: 400 16px DM Sans;
             line-height: 24px;
         }
     }
 
+    }
 }
