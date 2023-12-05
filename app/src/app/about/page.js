@@ -1,5 +1,24 @@
 import style from './style.module.scss';
 
+
+const statArr = [{
+    "id": "1",
+    "h1": "3",
+    "p": "Locations"
+}, {
+    "id": "2",
+    "h1": "1995",
+    "p": "Founded"
+}, {
+    "id": "3",
+    "h1": "65+",
+    "p": "Staff Members"
+}, {
+    "id": "4",
+    "h1": "100%",
+    "p": "Satisfied Customers"
+}]
+
 export default function about() {
     return (
         <>
@@ -16,13 +35,24 @@ export default function about() {
             </section>
 
             <section className={style.guests}>
-                <div className={style.statistic}>
-                    <div className={style.textInfo}>
-                        <h2>A little information for our valuable guest</h2>
-                        <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
+                <div className={style.wrapper}>
+                    <div className={style.statistics}>
+
+                        <div className={style.textInfo}>
+                            <h2>A little information for our valuable guest</h2>
+                            <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
+                            <div className={style.funFacts}>
+                                {statArr.map((el, index) =>
+                                    <div className={style.facts} key={index}>
+                                        <h1>{el.h1}</h1>
+                                        <p>{el.p}</p>
+                                    </div>)}
+                            </div>
+                        </div>
                     </div>
+                    <div className={style.imgCook}></div>
                 </div>
-                <div className={style.imgCook}></div>
+
             </section>
         </>
     )
