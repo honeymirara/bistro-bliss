@@ -1,0 +1,38 @@
+.healthyFood {
+    display: inline-flex;
+    align-items: center;
+    gap: 90px;
+    background: var(--neutral-02, #F9F9F7);
+
+    .pastaImg {
+        background: url('./assets/pasta.svg') no-repeat;
+        width: 330px;
+        height: 330px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        h1 {
+            color: var(--neutral-07, #2C2F24);
+            font: 500 55px Playfair Display;
+            line-height: 60.5px;
+        }
+
+        p1 {
+            color: var(--neutral-07, #2C2F24);
+            font: 500 18px DM Sans;
+            line-height: 28px;
+        }
+
+        p2 {
+            color: var(--neutral-06, #414536);
+            font:400 16px DM Sans;
+            line-height: 24px;
+        }
+    }
+
+}
