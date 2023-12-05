@@ -5,6 +5,7 @@ export default function Footer() {
   return (
 
     <>
+
       <div className={style.wrapper}>
         <div className={style.info}>
           <div className={style.logo}>
@@ -48,9 +49,8 @@ export default function Footer() {
           </div>
 
         </div>
-
+        <p className={style.ending}>Copyright © 2023 Hashtag Developer. All Rights Reserved</p>
       </div>
-      <p>Copyright © 2023 Hashtag Developer. All Rights Reserved</p>
 
     </>
 

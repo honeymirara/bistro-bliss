@@ -1,8 +1,10 @@
 .wrapper {
     display: flex;
+    gap: 96px;
     background: #474747;
-    gap: 135px;
-    padding: 120px 152px 239px 152px;
+    padding: 120px;
+    position: relative;
+    justify-content: space-between;
 
     .info {
         display: flex;
@@ -48,6 +50,7 @@
             color: var(--neutral-01, #FFF);
             font: 600 16px DM Sans;
             line-height: 24px;
+            
         }
 
         .paragraphs {
@@ -80,35 +83,52 @@
             color: var(--neutral-01, #FFF);
             font: 600 16px DM Sans;
             line-height: 24px;
+            cursor: pointer;
         }
 
         .images {
+            display: flex;
+            flex-wrap: wrap;
+            width: 459px;
+            gap: 10px;
+
+
             .first {
                 background: url('./assets/first.svg') no-repeat;
-                width: 222px;
+                width: 200px;
                 height: 176px;
+
             }
 
             .second {
                 background: url('./assets/second.svg') no-repeat;
-                width: 222px;
+                width: 200px;
                 height: 176px;
+
 
             }
 
             .third {
                 background: url('./assets/third.svg') no-repeat;
-                width: 222px;
+                width: 200px;
                 height: 176px;
+
             }
 
             .fourth {
                 background: url('./assets/fourth.svg') no-repeat;
-                width: 222px;
+                width: 200px;
                 height: 176px;
-
             }
         }
-
     }
+
+    .ending {
+        position: absolute;
+        color: var(--neutral-04, #ADB29E);
+        font: 400 16px DM Sans;
+        left: 37%;
+        top: 90%
+    }
+
 }
