@@ -1,0 +1,84 @@
+.menuWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 92px 91px 170px;
+    justify-content: space-between;
+    gap: 55px;
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+
+        h1 {
+            color: var(--neutral-07, #2C2F24);
+            text-align: center;
+            font: 400 100px Playfair Display;
+            line-height: 96px;
+        }
+
+        p {
+            color: var(--neutral-06, #495460);
+            text-align: center;
+            font: 400 18px DM Sans;
+            line-height: 28px;
+            width: 524px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .cards {
+        display: flex;
+        gap: 25px;
+        width: 1300px;
+        flex-wrap: wrap;
+
+        .dishes {
+            width: 306px;
+            height: 428px;
+            border-radius: 13px;
+            border: 1.5px solid var(--neutral-03, #DBDFD0);
+            background: var(--neutral-01, #FFF);
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+            &:hover {
+                cursor: pointer;
+                transition: 0.5s;
+                border-radius: 12px;
+                border: 1.5px solid var(--neutral-03, #DBDFD0);
+                background: var(--neutral-01, #FFF);
+
+            }
+
+            h1 {
+                color: #AD343E;
+                text-align: center;
+                font: 700 24px DM Sans;
+                line-height: 30px;
+                letter-spacing: -0.72px;
+            }
+
+            h2 {
+                color: var(--neutral-07, #2C2F24);
+                text-align: center;
+                font: 700 20px DM Sans;
+                line-height: 26px;
+
+            }
+
+            p {
+                color: var(--neutral-06, #414536);
+                text-align: center;
+                font: 400 16px DM Sans;
+                line-height: 24px;
+                width: 246px;
+            }
+        }
+    }
+
+}
