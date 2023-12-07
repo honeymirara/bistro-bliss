@@ -1,5 +1,9 @@
+'use client'
+
 import style from './style.module.scss';
 import ImgCards from '@/components/ImgCards/ImgCards';
+import Link from 'next/link';
+
 
 const cardArr = [{
     "id": "1",
@@ -51,6 +55,11 @@ const cardArr = [{
 
 
 export default function menu() {
+
+    function getResult(e){
+        console.log(e.currentTarget)
+    }
+   
     return (
         <>
             <section className={style.menuWrap}>
@@ -61,9 +70,9 @@ export default function menu() {
                 </div>
                 <div className={style.cards}>
                     {cardArr.map((el, index) =>
-                        <div className={style.dishes} key={index}>
+                        <div className={style.dishes} key={index} onClick={getResult}>
                             <ImgCards id={el.id} />
-                            <h1>{el.h1}</h1>
+                           <Link href={`/menu/${el.id}`} ><h1>{el.h1}</h1></Link> 
                             <h2>{el.h2}</h2>
                             <p>{el.p}</p>
                         </div>)}
