@@ -73,7 +73,7 @@ export default function menu() {
                         <div className={style.dishes} key={index} onClick={getResult}>
                             <ImgCards id={el.id} />
                            <Link href={`/menu/${el.id}`} ><h1>{el.h1}</h1></Link> 
-                            <h2>{el.h2}</h2>
+                           <Link href={`/menu/${el.id}`} ><h2>{el.h2}</h2></Link> 
                             <p>{el.p}</p>
                         </div>)}
                 </div>
